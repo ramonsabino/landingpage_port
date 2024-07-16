@@ -15,6 +15,7 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Services />
+      <Jobs />
       <Footer />
     </div>
     </>
@@ -50,6 +51,16 @@ const About: React.FC = () => {
       <img src={ABOUT_IMAGE_URL} alt="About" style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }} />
       <p>Eu me chamo Ramon, sou um desenvolvedor com 3 anos de experiência em React, TypeScript e Node.</p>
       <p>Atualmente trabalho com sistemas legados usando .NET MVC5 e C#</p>
+    </section>
+  );
+};
+
+const Jobs: React.FC = () => {
+  return (
+    <section id="jobs">
+      <h2>Meu Portfolio</h2>
+      <p>Aqui está meu repositório com alguns dos meu vários projetos</p>
+      <a href="https://github.com/ramonsabino" target="_blank" rel="noopener noreferrer">GitHub</a>
     </section>
   );
 };
